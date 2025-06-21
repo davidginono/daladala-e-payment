@@ -4,8 +4,8 @@ This repository contains a prototype of an e-payment system by using zenopay
 # ZenoPay Intergration Implementation
 The backend uses springboot, that forwards data to the proxy server.
 The proxy server sends a POST request to the zenopay api.
-Now, the database contains the phone number of the passenger, the accountId, however the amount is given by the front-end by the @RequestParameter in the code.
-The accountId, phone number and amount are sent with a POST request with the body x-www-form-urlencoded with the format;
+Now, the database contains the phone number of the passenger, the accountId (zenopay account), however the amount is given by the front-end.
+The accountId, phone number and amount are sent with a POST request as part of the body x-www-form-urlencoded with the format;
  
 POST {
 api_key:     null
